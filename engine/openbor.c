@@ -2621,7 +2621,7 @@ void clearsettings()
     savedata.logo = 1;
     savedata.uselog = 1;
     savedata.debuginfo = 0;
-    savedata.fullscreen = 0;
+    savedata.fullscreen = 1; // default to fullscreen
     savedata.fpslimit = 1; // default to vsync
 
 	#if WII
@@ -2633,7 +2633,7 @@ void clearsettings()
     savedata.swfilter = 0;
 
     #ifdef SDL
-    savedata.usegl = 1;
+    savedata.usegl = 0;
     savedata.hwfilter = 1;
         #ifdef ANDROID
         savedata.hwscale = 0.0;

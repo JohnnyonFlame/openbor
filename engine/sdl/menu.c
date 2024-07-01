@@ -59,7 +59,7 @@ static s_screen* logscreen;
 
 static int bpp = 32;
 static int isWide = 0;
-static int isFull = 0;
+static int isFull = 1;
 static int dListTotal;
 static int dListCurrentPosition;
 static int dListScrollPosition;
